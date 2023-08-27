@@ -128,16 +128,21 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
-   if(num == 57) return false
-   else if(num > 0 ){
-      for(let i = 2; i < Math.sqrt(num) ; i++){
-         if(num % i == 0) return false
-         return true
-      }
-      return false
+   // if(num == 57) return false
+   // else if(num > 0 ){
+   //    for(let i = 2; i < Math.sqrt(num) ; i++){
+   //       if(num % i == 0) return false
+   //       return true
+   //    }
+   //    return false
 
+   // }
+   // return false
+   if(num ==0 || num ===1 || num==4 || num < 0) return false
+   for(let i = 2 ; i< num  ; i++){
+      if(num%i ===0) return false
    }
-   return false
+   return true
 }
 
 function esVerdadero(valor) {
